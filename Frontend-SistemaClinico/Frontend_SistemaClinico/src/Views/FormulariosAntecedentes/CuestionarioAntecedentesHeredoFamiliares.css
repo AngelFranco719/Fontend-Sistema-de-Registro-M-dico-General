@@ -1,0 +1,358 @@
+.PrincipalDivHeredofamiliares {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 16px;
+    padding: 12px;
+    background: #f8fafc;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+}
+
+.btn-guardar {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 16px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    margin-bottom: 12px;
+    color: #ffffff;
+    background: #2563eb;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn-guardar:hover {
+    background: #1d4ed8;
+}
+
+.PrincipalDivHeredofamiliares .Header {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 12px;
+}
+
+.TituloFormulario {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #0f172a;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    border-left: 3px solid #3b82f6;
+}
+
+.PrincipalDivHeredofamiliares .Formulario::-webkit-scrollbar {
+    width: 6px;
+}
+
+.PrincipalDivHeredofamiliares .Formulario::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.PrincipalDivHeredofamiliares .Formulario::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 10px;
+}
+
+.PrincipalDivHeredofamiliares .Formulario::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8;
+}
+
+.PrincipalDivHeredofamiliares .Formulario {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    overflow-y: auto;
+    padding: 12px;
+    flex: 1;
+    background: #ffffff;
+    border-radius: 10px;
+    border: 1px solid #e2e8f0;
+}
+
+.PrincipalDivHeredofamiliares .Formulario .ExternalDiv {
+    width: 100%;
+    height: max-content;
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+    background: #ffffff;
+    transition: all 0.15s ease;
+}
+
+.PrincipalDivHeredofamiliares .Formulario .CategoriaVisualizer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    align-items: center;
+    gap: 12px;
+}
+
+.CategoriaVisualizer .LabelAntecedentes {
+    font-size: 0.75rem;
+    color: #64748b;
+    font-weight: 500;
+}
+
+.PrincipalDivHeredofamiliares .Formulario .CategoriaVisualizer .LabelTitulo {
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: #1e293b;
+}
+
+.PrincipalDivHeredofamiliares .Formulario .CategoriaVisualizer .spanRadio {
+    gap: 6px;
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    color: #475569;
+}
+
+.PrincipalDivHeredofamiliares .Formulario .CategoriaVisualizer .expand {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+    color: #94a3b8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.PrincipalDivHeredofamiliares .Formulario .ExternalDiv.expanded {
+    border-left: 3px solid #3b82f6;
+    background: #f8fafc;
+}
+
+.PrincipalDivHeredofamiliares .Formulario .ExternalDiv.expanded .expand {
+    transform: rotate(90deg);
+    color: #3b82f6;
+}
+
+.PrincipalDivHeredofamiliares .Formulario .CategoriaVisualizer .spanRadio input {
+    accent-color: #3b82f6;
+    cursor: pointer;
+    width: 14px;
+    height: 14px;
+}
+
+.ExternalDiv .PreguntasForm {
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    transform: translateY(-4px);
+    transition: all 0.2s ease;
+}
+
+.ExternalDiv.expanded .PreguntasForm {
+    max-height: 800px;
+    opacity: 1;
+    transform: translateY(0);
+    margin-top: 10px;
+}
+
+.PreguntasForm .divPregunta {
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    gap: 12px;
+    align-items: center;
+    padding: 10px 14px;
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    margin-bottom: 6px;
+    transition: all 0.2s ease;
+}
+
+.PreguntasForm .divPregunta:hover {
+    border-color: #cbd5e1;
+}
+
+.PreguntasForm .divPregunta label:first-child {
+    font-weight: 500;
+    color: #334155;
+    font-size: 0.85rem;
+}
+
+.CantidadRegistrosLabel {
+    font-size: 0.75rem;
+    color: #64748b;
+}
+
+.ExpandirButton {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 10px;
+    background-color: #f1f5f9;
+    color: #3b82f6;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.ExpandirButton:hover {
+    background-color: #e2e8f0;
+    color: #1d4ed8;
+}
+
+.ExpandirButton svg {
+    font-size: 1em;
+}
+
+.no-registros {
+    background-color: transparent !important;
+    color: #94a3b8 !important;
+    border: 1px dashed #cbd5e1 !important;
+}
+
+.PrincipalDivHeredofamiliares .FormResume {
+    width: 100%;
+    max-width: 380px;
+    padding: 16px;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    overflow-y: auto;
+}
+
+.FormResume .tituloModulo {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.FormResume>label,
+.tituloModulo>label {
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: #1e293b;
+}
+
+.FormResume .CategoriasDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.FormResume .closeButton {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: #94a3b8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+}
+
+.FormResume .closeButton:hover {
+    color: #ef4444;
+    background: #fef2f2;
+}
+
+.FormResume .AntecedenteDiv {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.FormResume .AntecedenteDiv .FechaLabel {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #475569;
+    text-transform: uppercase;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.AntecedenteDiv .spanTituloAntecedente {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.FormResume .AntecedenteDiv .RespuestaLabel {
+    font-size: 0.85rem;
+    color: #334155;
+    line-height: 1.4;
+}
+
+.FormResume .CategoriasDiv .ResumensDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.FormResume .CategoriasDiv .ResumensDiv>label {
+    font-weight: 600;
+    font-size: 0.85rem;
+    color: #3b82f6;
+}
+
+.FormResume .CategoriasDiv .ResumensDiv>div {
+    display: flex;
+    flex-direction: column;
+    background: #f8fafc;
+    border-radius: 6px;
+    padding: 8px;
+    font-size: 0.8rem;
+    color: #475569;
+    border-left: 2px solid #94a3b8;
+}
+
+.FormResume .CategoriasDiv .ResumensDiv>div label {
+    font-weight: 500;
+    color: #1e293b;
+}
+
+.FormResume .ResumenEmpty {
+    font-size: 0.85rem;
+    color: #64748b;
+    text-align: center;
+    padding: 30px 10px;
+}
+
+.labelTitulo {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #0f172a;
+    padding-left: 10px;
+    border-left: 3px solid #3b82f6;
+    margin-bottom: 12px;
+}
+
+.DescripcionFormulario {
+    font-size: 0.78rem;
+    color: #94a3b8;
+    line-height: 1.5;
+    margin: 0;
+    font-style: italic;
+}
+

@@ -1,0 +1,114 @@
+.NuevoAntecedenteDiv {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 18px;
+
+    padding: 18px 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+
+    max-width: 100%;
+
+}
+
+.NuevoAntecedenteDiv>label {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #1f2937;
+
+    letter-spacing: 0.3px;
+}
+
+
+.NuevoAntecedenteDiv input[type="date"] {
+    width: fit-content;
+
+    font-size: 0.8rem;
+    font-weight: 600;
+
+    padding: 6px 10px;
+
+    border-radius: 10px;
+
+    border: 1px solid #d1d5db;
+
+    background: #f9fafb;
+
+    color: #2563eb;
+}
+
+.NuevoAntecedenteDiv textarea {
+    min-height: 90px;
+    resize: vertical;
+
+    font-size: 0.85rem;
+
+    padding: 10px 12px;
+
+    border-radius: 12px;
+
+    border: 1px solid #e5e7eb;
+
+    background: #ffffff;
+
+    transition: border 0.15s ease, box-shadow 0.15s ease;
+}
+
+.NuevoAntecedenteDiv textarea:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+.NuevoAntecedenteDiv button {
+    align-self: flex-start;
+
+    padding: 10px 18px;
+
+    border-radius: 12px;
+
+    background: linear-gradient(90deg, #2563eb, #1d4ed8);
+
+    color: white;
+
+    border: none;
+
+    font-size: 0.8rem;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: all 0.2s ease;
+
+    box-shadow: 0 4px 14px rgba(37, 99, 235, 0.35);
+}
+
+.NuevoAntecedenteDiv button:hover {
+    transform: translateY(-1px);
+    filter: brightness(1.05);
+}
+
+.NuevoAntecedenteDiv button:active {
+    transform: translateY(0);
+    filter: brightness(0.95);
+}
+
+.spinner {
+    width: 20px;
+    height: 20px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border-top-color: #fff;
+    animation: spin 0.8s ease-in-out infinite;
+    display: inline-block;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}

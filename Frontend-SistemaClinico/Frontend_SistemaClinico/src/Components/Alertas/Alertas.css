@@ -1,0 +1,86 @@
+.overlayAlerta {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(15, 23, 42, 0.4);
+    backdrop-filter: blur(4px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+.divPrincipalAlerta {
+    background: #ffffff;
+    width: 90%;
+    max-width: 450px;
+    padding: 32px;
+    border-radius: 24px;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    animation: alertSpawn 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes alertSpawn {
+    from {
+        opacity: 0;
+        transform: scale(0.95) translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+.divPrincipalAlerta label {
+    font-size: 1.1rem;
+    color: #1f2937;
+    line-height: 1.6;
+    text-align: center;
+    font-weight: 500;
+    font-family: 'Nunito Sans';
+}
+
+.divConfirmButtons {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+}
+
+.divConfirmButtons button {
+    flex: 1;
+    padding: 12px 20px;
+    border-radius: 12px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn-confirm-save {
+    background: linear-gradient(90deg, #2b61ff, #1f4de0);
+    color: white;
+    border: none;
+    box-shadow: 0 4px 12px rgba(43, 97, 255, 0.2);
+}
+
+.btn-confirm-save:hover {
+    filter: brightness(1.1);
+    transform: translateY(-1px);
+}
+
+.btn-confirm-cancel {
+    background: #f1f5f9;
+    color: #64748b;
+    border: 1px solid #e2e8f0;
+}
+
+.btn-confirm-cancel:hover {
+    background: #e2e8f0;
+    color: #475569;
+}

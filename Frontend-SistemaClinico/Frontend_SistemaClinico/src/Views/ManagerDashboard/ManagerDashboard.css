@@ -1,0 +1,154 @@
+.ManagerDashboard {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    width: 100%;
+    height: 100%;
+
+    background: #ffffff;
+    border-radius: 28px;
+    box-shadow: 0 4px 30px rgba(43, 97, 255, 0.07);
+
+    padding: 36px 44px;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+/* ── Header ─────────────────────────────────────── */
+.ManagerDashboard__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.ManagerDashboard__header-text {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.ManagerDashboard__title {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #1f2937;
+    letter-spacing: -0.3px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.ManagerDashboard__title::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 52px;
+    height: 4px;
+    background: linear-gradient(90deg, #2b61ff, #1f4de0);
+    border-radius: 999px;
+}
+
+.ManagerDashboard__subtitle {
+    font-size: 0.875rem;
+    color: #8a94ad;
+    font-weight: 500;
+}
+
+.ManagerDashboard__btn-nuevo {
+    padding: 11px 22px;
+    font-size: 0.875rem;
+    border-radius: 14px;
+    white-space: nowrap;
+}
+
+/* ── Toolbar ─────────────────────────────────────── */
+.ManagerDashboard__toolbar {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.ManagerDashboard__count {
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: #b0bad4;
+    white-space: nowrap;
+}
+
+.ManagerDashboard__list {
+    flex: 1;
+    overflow-y: auto;
+}
+
+/* ── Grid ────────────────────────────────────────── */
+.ManagerDashboard__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 14px;
+}
+
+/* ── Empty state ─────────────────────────────────── */
+.ManagerDashboard__empty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 14px;
+    padding: 60px 20px;
+
+    color: #b0bad4;
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.ManagerDashboard__empty strong {
+    color: #8090b8;
+}
+
+/* ── Loading State ──────────────────────────────── */
+.ManagerDashboard__loading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    padding: 80px 0;
+    color: #8a94ad;
+    font-weight: 500;
+}
+
+.ManagerDashboard__spinner {
+    width: 40px;
+    height: 40px;
+    border: 4px solid rgba(43, 97, 255, 0.1);
+    border-left-color: #2b61ff;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.ManagerDashboard__skeleton-card {
+    height: 120px;
+    background: linear-gradient(90deg, #f0f2f5 25%, #e6e9ef 50%, #f0f2f5 75%);
+    background-size: 200% 100%;
+    animation: skeleton-loading 1.5s infinite;
+    border-radius: 20px;
+}
+
+@keyframes skeleton-loading {
+    0% {
+        background-position: 200% 0;
+    }
+
+    100% {
+        background-position: -200% 0;
+    }
+}

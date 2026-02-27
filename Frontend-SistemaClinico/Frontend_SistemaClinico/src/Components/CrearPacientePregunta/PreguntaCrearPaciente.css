@@ -1,0 +1,55 @@
+.Form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 6px;
+
+    font-size: 15px;
+
+    input[type="text"],
+    input[type="date"] {
+        height: 44px;
+        width: 100%;
+
+        border-radius: 10px;
+        border: 1px solid #d0d5dd;
+
+        padding: 0 14px;
+
+        font-size: 15px;
+        background: #fafafa;
+    }
+
+
+    .SpanForm {
+        font-weight: 600;
+        color: #333;
+    }
+
+    input:focus {
+        outline: none;
+        border-color: #0479bd;
+        background: white;
+
+        box-shadow: 0 0 0 3px rgba(4, 121, 189, 0.15);
+    }
+
+    .HMForm {
+        display: flex;
+        gap: 18px;
+        margin-top: 4px;
+
+        span {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+
+            padding: 8px 14px;
+            border-radius: 10px;
+
+            background: #f4f6fb;
+            border: 1px solid transparent;
+            transition: 0.15s;
+        }
+    }
+}

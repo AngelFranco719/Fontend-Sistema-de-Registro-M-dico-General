@@ -1,0 +1,58 @@
+.HistoriaClinica .InformacionGeneral {
+    background: white;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px 0px;
+    ;
+
+    padding: 24px 32px;
+
+    width: 100%;
+
+    border-radius: 20px;
+    box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.08);
+
+    border: 1px solid #eee;
+}
+
+.HistoriaClinica .InformacionGeneral>label:first-child {
+    grid-column: span 2;
+
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #222;
+
+    margin-bottom: 10px;
+}
+
+.HistoriaClinica .InformacionGeneral label {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.85rem;
+    color: #666;
+}
+
+.HistoriaClinica .InformacionGeneral label span {
+    font-weight: 500;
+    color: #888;
+    margin-bottom: 3px;
+}
+
+.HistoriaClinica .InformacionGeneral .title {
+    justify-self: right;
+}
+
+.HistoriaClinica .InformacionGeneral label {
+    color: #111;
+}
+
+@media (max-width: 700px) {
+    .HistoriaClinica .InformacionGeneral {
+        grid-template-columns: 1fr;
+    }
+
+    .HistoriaClinica .InformacionGeneral>label:first-child {
+        grid-column: span 1;
+    }
+}

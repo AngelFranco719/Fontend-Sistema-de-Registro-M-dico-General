@@ -1,0 +1,59 @@
+.SearchConsulta {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 12px 20px;
+    background: #ffffff;
+    border-radius: 18px;
+    margin-bottom: 20px;
+}
+
+.SearchConsulta label {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #64748b;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.SearchConsulta select {
+    appearance: none;
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 8px 35px 8px 16px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #1e293b;
+    cursor: pointer;
+    transition: all 0.2s ease;
+
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%2364748b'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'%3E%3C/path%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    background-size: 14px;
+}
+
+select option {
+    background-color: #ffffff;
+    color: #1e293b;
+    padding: 12px;
+    font-size: 0.9rem;
+}
+
+.SearchConsulta select:hover {
+    border-color: #2b61ff;
+    background-color: #ffffff;
+}
+
+.SearchConsulta select:focus {
+    outline: none;
+    border-color: #2b61ff;
+    box-shadow: 0 0 0 3px rgba(43, 97, 255, 0.1);
+    background-color: #ffffff;
+}
+
+.SearchConsulta select:invalid {
+    color: #94a3b8;
+}
